@@ -1,4 +1,20 @@
-
+<!-- Loan Section end -->
+<section class="loan-section">
+  <div class="loan-warp">
+    <div class="container">
+      <div class="section-title text-white">
+        <h2>Yuk kenalan dengan Coworking Space</h2>
+        <p>Donec eget efficitur ex. Donec eget dolor vitae eros feugiat tristique id vitae massa. Proin vulputate congue rutrum. Fusce lobortis a enim eget tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Ut gravida mattis magna, non varius lorem sodales nec. In libero orci, ornare non nisl a, auctor euismod purus. Morbi pretium interdum vestibulum. Fusce nec eleifend ipsum. Sed non blandit tellus. </p>
+      </div>
+      <form class="loan-form">
+        <input type="text" placeholder="Your income">
+        <input type="text" placeholder="Amount needed">
+        <button class="site-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Loan Section end -->
 <section class="property-section" style="background-color:#f4f5f7">
   <div class="container" >
     <div class="section-title">
@@ -7,12 +23,9 @@
     </div>
     <div class="row" >
       <div class="col-lg-4">
-        <div class="property-item">
-          <!-- <div class="text-center">
-            <img src="<?php echo base_url(); ?>/assets/frontend/img/starup.png" class="rounded" alt="...">
-          </div> -->
+        <div class="property-item text-center">
           <div class="pi-image">
-              <img src="<?php echo base_url(); ?>/assets/frontend/img/starup.png" alt="...">
+              <img class="rounded"src="<?php echo base_url(); ?>/assets/frontend/img/starup.png" alt="..." style="max-width: 50%;min-width: 10%;">
             <div class="pi-badge new">1</div>
           </div>
           <!-- <h3>$469,000</h3> -->
@@ -24,7 +37,7 @@
       <div class="col-lg-4">
         <div class="property-item">
           <div class="pi-image">
-            <img src="<?php echo base_url(); ?>/assets/frontend/img/property/2.jpg" alt="">
+            <img src="<?php echo base_url(); ?>/assets/frontend/img/property/2.jpg" alt="" style="max-width: 50%;min-width: 10%;" class="rounded">
             <div class="pi-badge offer">2</div>
           </div>
           <!-- <h3>$369,000</h3> -->
@@ -36,7 +49,7 @@
       <div class="col-lg-4">
         <div class="property-item">
           <div class="pi-image">
-            <img src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="">
+            <img src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="" style="max-width: 50%;min-width: 10%;" class="rounded">
             <div class="pi-badge new">3</div>
           </div>
           <!-- <h3>$560,000</h3> -->
@@ -57,34 +70,38 @@
     <div class="row" >
       <div class="col-lg-4">
         <div class="card" style="width: 18rem;">
+
           <img class="card-img-top" src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Tempat</h5>
+            <p class="card-text">
+              Workingspace Banyuwangi berlokasi di pusat kota, workingspace BANYUWANGI areanya luas, terdapat peralatan Presentasi seperti Proyektor,layar Proyektor dan lain-lain.
+            </p>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="property-item">
-          <div class="pi-image">
-            <img src="<?php echo base_url(); ?>/assets/frontend/img/property/2.jpg" alt="">
-            <div class="pi-badge offer">2</div>
+        <div class="card" style="width: 18rem;">
+
+          <img class="card-img-top" src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Internet</h5>
+            <p class="card-text">
+              Workingspace Banyuwangi berlokasi di pusat kota, workingspace BANYUWANGI areanya luas, terdapat peralatan Presentasi seperti Proyektor,layar Proyektor dan lain-lain.
+            </p>
           </div>
-          <!-- <h3>$369,000</h3> -->
-          <h5>2.Lakukan Pemesanan Tempat </h5>
-          <p>Lakukan pemesanan Coworking-Space BANYUWANGI  pada form pemesanan yang sudah di sediakan</p>
-          <a href="#" class="readmore-btn">Find out more</a>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="property-item">
-          <div class="pi-image">
-            <img src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="">
-            <div class="pi-badge new">3</div>
+        <div class="card" style="width: 18rem;">
+
+          <img class="card-img-top" src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">CCTV </h5>
+            <p class="card-text">
+              Workingspace Banyuwangi berlokasi di pusat kota, workingspace BANYUWANGI areanya luas, terdapat peralatan Presentasi seperti Proyektor,layar Proyektor dan lain-lain.
+            </p>
           </div>
-          <!-- <h3>$560,000</h3> -->
-          <h5>3. Tunggu Konfirmasi Petugas</h5>
-          <p>Tunggu konfirmasi pemesanan tempat mu di setujui oleh petugas </p>
-          <a href="#" class="readmore-btn">Find out more</a>
         </div>
       </div>
     </div>
