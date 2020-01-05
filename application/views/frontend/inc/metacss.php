@@ -13,6 +13,9 @@
 
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/frontend/css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css ">
 
 
 	<!--[if lt IE 9]>

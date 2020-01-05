@@ -5,14 +5,16 @@
 
 <!-- Header Section -->
 <header class="header-section">
-  <a href="index.html" class="site-logo">
-    <img src="<?php echo base_url(); ?>/assets/frontend/img/logo.png" alt="">
+  <a href="index.html" class="site-logo text-decoration-none">
+  <p class="font-weight-bolder font-size-26 text-white">Coworking Space</p>
+    <!-- <img src="<?php echo base_url(); ?>/assets/frontend/img/logo.png" alt=""> -->
   </a>
   <nav class="header-nav">
     <ul class="main-menu">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about-us.html">About</a></li>
-      <li><a href="#">Buy</a></li>
+      <li><a href="<?php echo base_url();?>Booking
+        ">Booking</a></li>
+      <!-- <li><a href="#">Buy</a></li>
       <li><a href="#">Pages</a>
         <ul class="sub-menu">
           <li><a href="about-us.html">About Us</a></li>
@@ -21,7 +23,7 @@
         </ul>
       </li>
       <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li> -->
     </ul>
     <div class="header-right">
       <div class="user-panel">
@@ -41,30 +43,20 @@
         <div class="search-type">
           <div class="st-item">
             <input type="radio" name="st" id="buy" checked>
-            <label for="buy">Buy1</label>
-          </div>
-          <div class="st-item">
-            <input type="radio" name="st" id="rent">
-            <label for="rent">Rent</label>
-          </div>
-          <div class="st-item">
-            <input type="radio" name="st" id="sell">
-            <label for="sell">Sell</label>
-          </div>
-          <div class="st-item">
-            <input type="radio" name="st" id="property">
-            <label for="property">Property Value</label>
-          </div>
-          <div class="st-item">
-            <input type="radio" name="st" id="agents">
-            <label for="agents">Agents</label>
+            <label for="buy">Cek Tanggal</label>
           </div>
         </div>
         <div class="search-input">
-          <input type="text" placeholder="Search by state, postcode or suburb">
-          <button class="site-btn">Search</button>
+
+          <input type="date" placeholder="Search by state, postcode or suburb">
+          <div class="form-group">
+          <div class="input-group time" >
+            <input id="timepicker" class="form-control" placeholder="HH:MM AM/PM"/><span class="input-group-append input-group-addon">
+          </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+          <button class="site-btn" style="height: 71px;">Search</button>
+        </div>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p> -->
       </form>
     </div>
   </div>
