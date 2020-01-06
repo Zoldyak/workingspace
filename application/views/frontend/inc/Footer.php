@@ -1,4 +1,92 @@
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="  background: #ff000a !important; ">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Sign-in</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<form class="" action="index.html" method="post">
+					<div class="form-group">
+					  <label for="">Username/Email</label>
+					  <input type="text" class="form-control" id="" placeholder="Username / Email">
 
+					</div>
+					<div class="form-group">
+					  <label for="">Password</label>
+					  <input type="password" class="form-control" id="" placeholder="Password ">
+					</div>
+					<a href="#" data-toggle="modal" data-target="#create">Belum mempunyai Akun? Buat akun</a>
+      	</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+        <button type="button" class="btn btn-danger btn-outline-danger btnku">Sign -In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="create" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-lg-5 ">
+						<div class="text-center d-flex">
+							<img Src="<?php echo base_url(); ?>/assets/frontend/img/signup-image.jpg" class="rounded mx-auto my-auto" alt="login">
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<br>
+						<h3>Form Registrasi</h3>
+						<hr>
+						<form class="" action="index.html" method="post">
+							<div class="form-group">
+
+								<input type="text" class="form-control" id="" placeholder="Username">
+
+							</div>
+							<div class="form-group">
+
+								<input type="email" class="form-control" id="" placeholder="Email">
+
+							</div>
+							<div class="form-group">
+
+								<input type="text" class="form-control" id="" placeholder="Nama Lengkap">
+
+							</div>
+							<div class="form-group">
+
+								<input type="password" class="form-control" id="" placeholder="Password">
+
+							</div>
+							<div class="form-group">
+
+								<input type="text" class="form-control" id="" placeholder="Nomor Hp/Whatsapp">
+
+							</div>
+							<div class="form-group">
+
+								<textarea placeholder="Alamat lengkap" name="name" class="form-control" rows="8" cols="80"></textarea>
+
+							</div>
+							<hr>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+							<button type="button" class="btn btn-danger btn-outline-danger btnku">Sign -UP</button>
+							<br>
+						</form>
+						<br>
+					</div>
+				</div>
+			</div>
+
+    </div>
+  </div>
+</div>
 	<!-- Footer Section -->
 	<footer class="footer-section">
 		<div class="container">
@@ -26,18 +114,14 @@
 						</ul>
 					</div>
 				</div>
-				<!-- <div class="col-lg-2 col-md-3 col-sm-6">
+				<div class="col-lg-2 col-md-3 col-sm-6">
 					<div class="footer-widger">
-						<h2>For Buyers</h2>
+						<h2>Hubungi Kami di</h2>
 						<ul>
-							<li><a href="#">Buy with us</a></li>
-							<li><a href="#">Papers</a></li>
-							<li><a href="#">Clients</a></li>
-							<li><a href="#">Testimonials</a></li>
-							<li><a href="#">Homes</a></li>
+							<li><i class="fa fa-phone-square "></i> 08136869789</li>
 						</ul>
 					</div>
-				</div> -->
+				</div>
 				<!-- <div class="col-lg-2 col-md-3 col-sm-6">
 					<div class="footer-widger">
 						<h2>For Sellers</h2>

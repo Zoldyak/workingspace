@@ -27,8 +27,8 @@
     </ul>
     <div class="header-right">
       <div class="user-panel">
-        <a href="#" class="login">Sign in</a>
-        <a href="#" class="register">Join us</a>
+        <a href="#" data-toggle="modal" data-target="#login" class="login">Sign in</a>
+        <!-- <a href="#" class="register">Join us</a> -->
       </div>
     </div>
   </nav>

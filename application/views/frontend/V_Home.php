@@ -5,7 +5,7 @@
       <div class="section-title text-dark">
         <h2 class="font-size-22 text-monospace">Yuk kenalan dengan Coworking Space?</h2>
         <p class="text-justify text-body font-size-18">
-          Coworking Space merupakan Tren kerja bersama yang makin diminati. Coworking space berarti tempat untuk orang-orang berbagi ruang untuk bekerja.Orang-orang ini bisa terdiri dari individu, komunitas, suatu perusahaan yang bergerak di bidang bisnis, khususnya startup (bisnis rintisan).Dengan adanya Coworking space, diharapkan antar individu dapat saling bertukar ide, pikiran, maupun solusi dalam rangka mengembangkan dan memajukan bisnis masing-masing
+          Coworking Space merupakan Tren kerja bersama yang makin diminati. Coworking space berarti tempat untuk orang-orang berbagi ruang untuk bekerja.Orang-orang ini bisa terdiri dari individu, komunitas, suatu perusahaan yang bergerak di bidang bisnis, khususnya startup (bisnis rintisan).Dengan adanya Coworking space, diharapkan antar individu dapat saling bertukar ide, pikiran, maupun solusi dalam rangka mengembangkan dan memajukan bisnis masing-masing.Coworking Space Banyuwangi beralamat di Tukangkayu, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68416.
         </p>
       </div>
 
@@ -27,33 +27,37 @@
             <div class="pi-badge new">1</div>
           </div>
           <!-- <h3>$469,000</h3> -->
+
           <h5>1. Tentukan Jadwal Sesuai Keinginan mu</h5>
           <p class="text-dark font-weight-normal">Tentukan jadwal pemakaian tempat sesuai kebutuhan anda di Coworking-Space BANYUWANGI </p>
           <a href="#" class="readmore-btn">Find out more</a>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="property-item">
+        <div class="property-item text-center">
           <div class="pi-image">
-            <img src="<?php echo base_url(); ?>/assets/frontend/img/property/2.jpg" alt="" style="max-width: 50%;min-width: 10%;" class="rounded">
+            <img src="<?php echo base_url(); ?>/assets/frontend/img/Pemesanan.png" alt="" style="max-width: 50%;min-width: 10%;" class="rounded">
             <div class="pi-badge offer">2</div>
           </div>
+
           <!-- <h3>$369,000</h3> -->
           <h5>2.Lakukan Pemesanan Tempat </h5>
           <p class="text-dark">Lakukan pemesanan Coworking-Space BANYUWANGI  pada form pemesanan yang sudah di sediakan</p>
-          <a href="#" class="readmore-btn">Find out more</a>
+          <a href="<?php echo base_url();?>Booking
+            " class="readmore-btn">Find out more</a>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="property-item">
           <div class="pi-image">
-            <img src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="" style="max-width: 50%;min-width: 10%;" class="rounded">
+            <img src="<?php echo base_url(); ?>/assets/frontend/img/payment_completed_PNG.png" alt="" style="max-width: 50%;min-width: 10%;" class="rounded">
             <div class="pi-badge new">3</div>
           </div>
           <!-- <h3>$560,000</h3> -->
           <h5>3. Tunggu Konfirmasi Petugas</h5>
           <p class="text-dark">Tunggu konfirmasi pemesanan tempat mu di setujui oleh petugas </p>
-          <a href="#" class="readmore-btn">Find out more</a>
+          <a href="<?php echo base_url();?>Booking
+            " class="readmore-btn">Find out more</a>
         </div>
       </div>
     </div>
@@ -67,10 +71,10 @@
       <h4 class="text-uppercase">Fasilitas yang disediakan </h4>
     </div>
     <div class="row" >
-      <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-5">
+        <div class="card" >
 
-          <img class="card-img-top" src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="" alt="Card image cap">
+          <img class="card-img-top" src="<?php echo base_url(); ?>/assets/frontend/img/fasilitas1.jpeg" alt="" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Tempat</h5>
             <p class="card-text">
@@ -79,19 +83,19 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
+      <div class="col-lg-5">
+        <div class="card" >
 
-          <img class="card-img-top" src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="" alt="Card image cap">
+          <img class="card-img-top" src="<?php echo base_url(); ?>/assets/frontend/img/fasilitas2.jpeg" alt="" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Internet</h5>
             <p class="card-text">
-              Workingspace Banyuwangi berlokasi di pusat kota, workingspace BANYUWANGI areanya luas, terdapat peralatan Presentasi seperti Proyektor,layar Proyektor dan lain-lain.
+              Workingspace Banyuwangi berlokasi di pusat kota, workingspace BANYUWANGI memiliki Fasilitas Internet yang cepat dan stabil. selain itu fasilitas Internetnya GRATIS.
             </p>
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <!-- <div class="col-lg-4">
         <div class="card" style="width: 18rem;">
 
           <img class="card-img-top" src="<?php echo base_url(); ?>/assets/frontend/img/property/3.jpg" alt="" alt="Card image cap">
@@ -102,7 +106,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>

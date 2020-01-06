@@ -40,19 +40,19 @@
                            </div>
                            <div class="form-group" style="padding-bottom: 20px;">
                              <label for="alamat">Keperluan Pemakaian</label>
-                              <textarea name="alamat"  class="form-control" placeholder="Masukkan alamat anda" required/></textarea>
+                              <textarea name="alamat"  class="form-control" placeholder="Masukkan" required/></textarea>
                            </div>
 
                     <div class="form-group" style="padding-bottom: 20px;">
                              <label for="hobi">Jumlah Peserta</label>
-                             <input type="Number" name="hobi"  class="form-control" placeholder="Hobi anda" required/>
+                             <input type="Number" name="hobi"  class="form-control" placeholder="Jumlah" required/>
                              <span>Max 20 Orang</span>
                            </div>
-
+<!-- 
                            <div class="form-group" style="padding-bottom: 20px;">
                              <label for="tgl">Tanggal Lahir</label>
                               <input class="form-control" id="tgl" name="tgl" placeholder="MM/DD/YYY" type="text" required/>
-                             </div>
+                             </div> -->
 
                     <div class="form-group">
                                  <label for="exampleInputEmail1">Kategori</label> <br>
@@ -73,7 +73,7 @@
                                Cancel
                              </button>
                          </div>
-                         <p> <a title="belajar_Modal" href="https://pemulungkode.com">pemulungkode</a> </p>
+
                          </form>
 
 
