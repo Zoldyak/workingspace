@@ -4,6 +4,7 @@
 </div>
 
 <!-- Header Section -->
+
 <header class="header-section">
   <a href="index.html" class="site-logo text-decoration-none">
   <p class="font-weight-bolder font-size-26 text-white">Coworking Space</p>
@@ -36,8 +37,13 @@
 <!-- Header Section end -->
 
 <!-- Hero Section end -->
-<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>/assets/frontend/img/hero-bg.jpg">
+<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>/assets/frontend/img/DSC01199.jpg">
   <div class="container">
+    <?php echo $this->session->flashdata('error');?>
+    <div class="alert alert-danger">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <strong>  <?php echo validation_errors(); ?></strong>
+                  </div>
     <div class="hero-warp">
       <form class="main-search-form">
         <div class="search-type">

@@ -15,6 +15,12 @@
 
 
 <script>
+$(document).ready(function() {
+  $(".alert").hide();
+    $(".alert").fadeTo(2000, 500).slideUp(500, function() {
+      $(".alert").slideUp(500);
+    });
+});
 $("#timepicker").datetimepicker({
  format: "LT",
  icons: {

@@ -6,6 +6,8 @@
         <h2 class="font-size-22 text-monospace">Yuk kenalan dengan Coworking Space?</h2>
         <p class="text-justify text-body font-size-18">
           Coworking Space merupakan Tren kerja bersama yang makin diminati. Coworking space berarti tempat untuk orang-orang berbagi ruang untuk bekerja.Orang-orang ini bisa terdiri dari individu, komunitas, suatu perusahaan yang bergerak di bidang bisnis, khususnya startup (bisnis rintisan).Dengan adanya Coworking space, diharapkan antar individu dapat saling bertukar ide, pikiran, maupun solusi dalam rangka mengembangkan dan memajukan bisnis masing-masing.Coworking Space Banyuwangi beralamat di Tukangkayu, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68416.
+          <?php $datestring = '%Y-%m-%d - %h:%i';
+          echo mdate($datestring); ?>
         </p>
       </div>
 

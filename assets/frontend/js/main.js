@@ -55,13 +55,13 @@ $(window).on('load', function() {
 		var lc_dpay     = $('#lc-dpay').val();
 		var weeks = 52;
 
-		// Minus Down Payment 
+		// Minus Down Payment
 		lc_price = lc_price - lc_dpay;
 
-		// Find percentage  
+		// Find percentage
 		var perc = (lc_price/100) * lc_interest;
 
-		// Add percentage to main price 
+		// Add percentage to main price
 		lc_price = (lc_price + perc);
 
 		// Weekly pay result
@@ -74,4 +74,3 @@ $(window).on('load', function() {
 	})
 
 })(jQuery);
-

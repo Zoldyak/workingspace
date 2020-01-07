@@ -41,44 +41,34 @@
 					</div>
 					<div class="col-lg-7">
 						<br>
+
 						<h3>Form Registrasi</h3>
 						<hr>
-						<form class="" action="index.html" method="post">
+            <?php echo form_open_multipart('User/Create') ?>
+						<!-- <form class="" action="index.html" method="post"> -->
 							<div class="form-group">
-
-								<input type="text" class="form-control" id="" placeholder="Username">
-
+								<input name="email" type="email" class="form-control" id="" placeholder="Email">
 							</div>
 							<div class="form-group">
-
-								<input type="email" class="form-control" id="" placeholder="Email">
-
+								<input name="nama" type="text" class="form-control" id="" placeholder="Nama Lengkap">
 							</div>
 							<div class="form-group">
-
-								<input type="text" class="form-control" id="" placeholder="Nama Lengkap">
-
+								<input name="password" type="password" class="form-control" id="" placeholder="Password">
 							</div>
 							<div class="form-group">
-
-								<input type="password" class="form-control" id="" placeholder="Password">
-
+								<input name="hp" type="text" class="form-control" id="" placeholder="Nomor Hp/Whatsapp">
 							</div>
 							<div class="form-group">
-
-								<input type="text" class="form-control" id="" placeholder="Nomor Hp/Whatsapp">
-
+								<textarea placeholder="Alamat lengkap" name="alamat" class="form-control" rows="8" cols="80"></textarea>
 							</div>
-							<div class="form-group">
-
-								<textarea placeholder="Alamat lengkap" name="name" class="form-control" rows="8" cols="80"></textarea>
-
+              <div class="form-group">
+								<input name="foto" type="file" class="form-control" id="" placeholder="Foto">
 							</div>
 							<hr>
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-							<button type="button" class="btn btn-danger btn-outline-danger btnku">Sign -UP</button>
+							<button type="submit" class="btn btn-danger btn-outline-danger btnku">Sign -UP</button>
 							<br>
-						</form>
+						  <?php echo form_close(); ?>
 						<br>
 					</div>
 				</div>
