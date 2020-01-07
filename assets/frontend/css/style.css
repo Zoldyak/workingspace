@@ -350,7 +350,7 @@ Header section
 }
 
 .header-right .register {
-  border: 2px solid #fff;
+  border: 0 px;
   min-width: 130px;
   text-align: center;
   padding: 8px 15px;

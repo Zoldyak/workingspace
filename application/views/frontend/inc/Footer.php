@@ -8,23 +8,24 @@
         </button>
       </div>
       <div class="modal-body">
-      	<form class="" action="index.html" method="post">
+      	<?php echo form_open('User/Auth') ?>
 					<div class="form-group">
 					  <label for="">Username/Email</label>
-					  <input type="text" class="form-control" id="" placeholder="Username / Email">
+					  <input name="username" type="text" class="form-control" id="" placeholder="Username / Email">
 
 					</div>
 					<div class="form-group">
 					  <label for="">Password</label>
-					  <input type="password" class="form-control" id="" placeholder="Password ">
+					  <input name="password" type="password" class="form-control" id="" placeholder="Password ">
 					</div>
 					<a href="#" data-toggle="modal" data-target="#create">Belum mempunyai Akun? Buat akun</a>
-      	</form>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-danger btn-outline-danger btnku">Sign -In</button>
+        <button type="submit" class="btn btn-danger btn-outline-danger btnku">Sign -In</button>
       </div>
+      </form>
     </div>
   </div>
 </div>

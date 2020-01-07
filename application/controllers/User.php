@@ -6,15 +6,47 @@ class User extends CI_Controller{
   public function __construct()
   {
     parent::__construct();
+      $this->load->model('MF_user');
+      $this->load->model('MF_booking');
     //Codeigniter : Write Less Do More
   }
 
   function index()
   {
     $load=$this->load;
+    $username=$this->session->userdata('user_id');
+    $ceklist=$this->MF_user->cek_list($username)->row_array();
+    $cekbook=$this->MF_booking->cek_booking($username)->result_array();
+    // print_r($ceklist);
   $data = array('halaman' => 'V_User.php',
-                );
+                'data'=>$ceklist,
+                'databooking'=>$cekbook);
   $load->view('frontend/layout',$data);
+  }
+  public function Auth()
+  {
+    $username=htmlspecialchars($this->input->post('username',TRUE),ENT_QUOTES);
+    $password=htmlspecialchars($this->input->post('password',TRUE),ENT_QUOTES);
+    $real_pass=md5("#@".$password."@#");
+    $cek_auth=$this->MF_user->auth_login($username,$real_pass);
+    if ($cek_auth->num_rows() > 0) {
+      $data=$cek_auth->row_array();
+      $data_login = array(
+                'is_logged_in'=> true,
+                'user_id'=>$data['email'],
+                'user_nama'=>$data['nama_lengkap'],
+                'user_role'=>$data['level'],
+                // 'user_menu'=>$data['menu_akses'],
+            );
+            if ($data['level']==2) {
+                $this->session->set_userdata($data_login);
+                redirect('/Home/','refresh');
+            }
+            else{
+              echo "gagal";
+            }
+      // code...
+    }
   }
   public function Create()
   {
@@ -50,7 +82,8 @@ class User extends CI_Controller{
                       'no_hp'=>$posthp,
                       'alamat'=>$postalamat,
                       'foto'  => $fileFoto1['upload_data']['file_name'],
-                      'create_on' =>$datestring
+                      'create_on' =>$datestring,
+                      'level'=> 2
                   );
             $this->db->insert('working_user', $data_form);
               redirect('/Home/','refresh');
@@ -62,5 +95,9 @@ class User extends CI_Controller{
         $load->view('frontend/layout',$data);
       }
   }
-
+  public function Logout()
+      {
+          $this->session->sess_destroy();
+          redirect('/Home/','refresh');
+      }
 }

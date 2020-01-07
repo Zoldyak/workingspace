@@ -28,7 +28,13 @@
     </ul>
     <div class="header-right">
       <div class="user-panel">
-        <a href="#" data-toggle="modal" data-target="#login" class="login">Sign in</a>
+          <?php if ($this->session->userdata('user_role') == '2') {?>
+            <a href="<?php echo base_url();?>/User/"  class="login">Dashboard</a>
+            <a href="<?php echo base_url();?>/User/Logout" class="register">Log out</a>
+          <?php } else{?>
+            <a href="#" data-toggle="modal" data-target="#login" class="login">Sign in</a>
+        <?php  }?>
+
         <!-- <a href="#" class="register">Join us</a> -->
       </div>
     </div>
@@ -45,6 +51,7 @@
                     <strong>  <?php echo validation_errors(); ?></strong>
                   </div>
     <div class="hero-warp">
+      <?php echo form_open_multipart('Booking/') ?>
       <form class="main-search-form">
         <div class="search-type">
           <div class="st-item">
@@ -54,10 +61,10 @@
         </div>
         <div class="search-input">
 
-          <input type="date" placeholder="Search by state, postcode or suburb">
+          <input type="date" name="tanggal" placeholder="Search by state, postcode or suburb">
           <div class="form-group">
           <div class="input-group time" >
-            <input id="timepicker" class="form-control" placeholder="HH:MM AM/PM"/><span class="input-group-append input-group-addon">
+            <input id="timepicker" name="jam" class="form-control" placeholder="HH:MM AM/PM"/><span class="input-group-append input-group-addon">
           </div>
         </div>
           <button class="site-btn" style="height: 71px;">Search</button>
