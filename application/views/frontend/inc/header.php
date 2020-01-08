@@ -28,8 +28,17 @@
     </ul>
     <div class="header-right">
       <div class="user-panel">
-          <?php if ($this->session->userdata('user_role') == '2') {?>
-            <a href="<?php echo base_url();?>/User/"  class="login">Dashboard</a>
+          <?php if ($this->session->userdata('user_role') == '2') {
+            $query = $this->db->get_where('working_booking', array('terbaca_user' => "baru",'email'=>$this->session->userdata('user_id')));
+            $jumlah= $query->num_rows();
+            if ($jumlah > 0) {
+              // code...
+
+            ?>
+            <a href="<?php echo base_url();?>/User/"  class="login">Dashboard <span class="badge badge-pill badge-success">New</span></a>
+            <?php } else{?>
+              <a href="<?php echo base_url();?>/User/"  class="login">Dashboard</a>
+            <?php   } ?>
             <a href="<?php echo base_url();?>/User/Logout" class="register">Log out</a>
           <?php } else{?>
             <a href="#" data-toggle="modal" data-target="#login" class="login">Sign in</a>

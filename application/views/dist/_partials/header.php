@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- General CSS Files -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/modules/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/modules/fontawesome/css/all.min.css">
-
+    <script src="<?php echo base_url(); ?>assets/backend/modules/jquery.min.js"></script>
   <!-- CSS Libraries -->
 <?php
 if ($this->uri->segment(2) == "" || $this->uri->segment(2) == "index") { ?>
@@ -64,7 +64,7 @@ if ($this->uri->segment(2) == "" || $this->uri->segment(2) == "index") { ?>
 }elseif ($this->uri->segment(2) == "modules_calendar") { ?>
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/modules/fullcalendar/fullcalendar.min.css">
 <?php
-}elseif ($this->uri->segment(2) == "modules_datatables") { ?>
+}elseif ($this->uri->segment(2) == "modules_datatables"||$this->uri->segment(2) == "User" ||$this->uri->segment(2) == "Booking") { ?>
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/modules/datatables/datatables.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/backend/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">

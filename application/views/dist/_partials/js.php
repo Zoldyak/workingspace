@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
   <!-- General JS Scripts -->
-  <script src="<?php echo base_url(); ?>assets/backend/modules/jquery.min.js"></script>
+
   <script src="<?php echo base_url(); ?>assets/backend/modules/popper.js"></script>
   <script src="<?php echo base_url(); ?>assets/backend/modules/tooltip.js"></script>
   <script src="<?php echo base_url(); ?>assets/backend/modules/bootstrap/js/bootstrap.min.js"></script>
@@ -83,7 +83,7 @@ if ($this->uri->segment(2) == "" || $this->uri->segment(2) == "index") { ?>
 }elseif ($this->uri->segment(2) == "modules_chartjs") { ?>
   <script src="<?php echo base_url(); ?>assets/backend/modules/chart.min.js"></script>
 <?php
-}elseif ($this->uri->segment(2) == "modules_datatables") { ?>
+}elseif ($this->uri->segment(2) == "modules_datatables" || $this->uri->segment(2) == "User" ||$this->uri->segment(2) == "Booking") { ?>
   <script src="<?php echo base_url(); ?>assets/backend/modules/datatables/datatables.min.js"></script>
   <script src="<?php echo base_url(); ?>assets/backend/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
   <script src="<?php echo base_url(); ?>assets/backend/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
@@ -196,7 +196,7 @@ if ($this->uri->segment(2) == "" || $this->uri->segment(2) == "index") { ?>
 }elseif ($this->uri->segment(2) == "modules_chartjs") { ?>
   <script src="<?php echo base_url(); ?>assets/backend/js/page/modules-chartjs.js"></script>
 <?php
-}elseif ($this->uri->segment(2) == "modules_datatables") { ?>
+}elseif ($this->uri->segment(2) == "modules_datatables" || $this->uri->segment(2) == "User" ||$this->uri->segment(2) == "Booking") { ?>
   <script src="<?php echo base_url(); ?>assets/backend/js/page/modules-datatables.js"></script>
 <?php
 }elseif ($this->uri->segment(2) == "modules_ion_icons") { ?>

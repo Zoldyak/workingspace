@@ -1,26 +1,27 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-      <div class="main-sidebar sidebar-style-2">
-        <aside id="sidebar-wrapper">
+      <div class="main-sidebar sidebar-style-2" style="background: #000;">
+        <aside id="sidebar-wrapper" style="background: #000;">
           <div class="sidebar-brand">
-            <a href="<?php echo base_url(); ?>dist/index">Dashboard CWS</a>
+            <a href="<?php echo base_url(); ?>dist/index" style="color:#fff">Dashboard CWS</a>
           </div>
-          <div class="sidebar-brand sidebar-brand-sm">
+          <div class="sidebar-brand sidebar-brand-sm" style="background: #000;">
             <a href="<?php echo base_url(); ?>dist/index">St</a>
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
 
-            <li class="dropdown <?php echo $this->uri->segment(2) == '' || $this->uri->segment(2) == 'index' || $this->uri->segment(2) == 'index_0' ? 'active' : ''; ?>">
+            <!-- <li class="dropdown <?php echo $this->uri->segment(2) == '' || $this->uri->segment(2) == 'index' || $this->uri->segment(2) == 'index_0' ? 'active' : ''; ?>">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
               <ul class="dropdown-menu">
                 <li class="<?php echo $this->uri->segment(2) == 'index_0' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>dist/index_0">General Dashboard</a></li>
                 <li class="<?php echo $this->uri->segment(2) == '' || $this->uri->segment(2) == 'index' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>dist/index">Ecommerce Dashboard</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="<?php echo $this->uri->segment(2) == 'User' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>Administrator/User/"><i class="far fa-user"></i> <span>User</span></a></li>
-            <li class="menu-header">Starter</li>
+            <li class="<?php echo $this->uri->segment(2) == 'Booking' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>Administrator/Booking/"><i class="far fa-bookmark"></i> <span>booking</span></a></li>
+            <!-- <li class="menu-header">Starter</li>
             <li class="dropdown <?php echo $this->uri->segment(2) == 'layout_default' || $this->uri->segment(2) == 'layout_transparent' || $this->uri->segment(2) == 'layout_top_navigation' ? 'active' : ''; ?>">
               <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
               <ul class="dropdown-menu">
@@ -151,13 +152,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li><a href="<?php echo base_url(); ?>dist/utilities_subscribe">Subscribe</a></li>
               </ul>
             </li>
-            <li class="<?php echo $this->uri->segment(2) == 'credits' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>dist/credits"><i class="fas fa-pencil-ruler"></i> <span>Credits</span></a></li>
+            <li class="<?php echo $this->uri->segment(2) == 'credits' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>dist/credits"><i class="fas fa-pencil-ruler"></i> <span>Credits</span></a></li> -->
           </ul>
 
-          <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+          <!-- <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
             <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
               <i class="fas fa-rocket"></i> Documentation
             </a>
-          </div>
+          </div> -->
         </aside>
       </div>

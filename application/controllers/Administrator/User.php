@@ -7,12 +7,15 @@ class User extends CI_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
+      $this->load->model('MA_User');
   }
 
   function index()
   {
+    $cekuser=$this->MA_User->List_user()->result_array();
     $data = array(
-			'title' => "Blank Page"
+			'title' => "Blank Page",
+      'datauser'=>$cekuser
 		);
 		$this->load->view('dist/user', $data);
   }

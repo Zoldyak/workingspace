@@ -13,6 +13,11 @@ class User extends CI_Controller{
 
   function index()
   {
+    $data = array(
+    'terbaca_user' => "sudah terbaca",
+    );
+    $this->db->where('email', $this->session->userdata('user_id'));
+    $this->db->update('working_booking', $data);
     $load=$this->load;
     $username=$this->session->userdata('user_id');
     $ceklist=$this->MF_user->cek_list($username)->row_array();
@@ -42,8 +47,12 @@ class User extends CI_Controller{
                 $this->session->set_userdata($data_login);
                 redirect('/Home/','refresh');
             }
+            if ($data['level']==1) {
+                $this->session->set_userdata($data_login);
+                redirect('/Administrator/User/','refresh');
+            }
             else{
-              echo "gagal";
+              redirect('/Home/','refresh');
             }
       // code...
     }

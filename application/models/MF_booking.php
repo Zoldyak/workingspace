@@ -13,6 +13,7 @@ class MF_booking extends CI_Model{
     $this->db->select('*');
     $this->db->from('working_booking');
     $this->db->where('tanggal_pakai', $posttanggal);
+    $this->db->order_by('working_booking.create_on', 'DESC');
     $hasil = $this->db->get();
     return $hasil;
   }
@@ -21,6 +22,7 @@ class MF_booking extends CI_Model{
     $this->db->select('*');
     $this->db->from('working_booking');
     $this->db->where('email', $username);
+    $this->db->order_by('create_on', 'DESC');
     $hasil = $this->db->get();
     return $hasil;
   }
