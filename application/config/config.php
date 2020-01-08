@@ -450,7 +450,7 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_regenerate' = Regenerate token on every submission
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
-if (stripos($_SERVER["REQUEST_URI"],'/Booking/ajax_date/') === FALSE && stripos($_SERVER["REQUEST_URI"],'/Booking') === FALSE  ) {
+if (stripos($_SERVER["REQUEST_URI"],'/Booking/ajax_date/') === FALSE && stripos($_SERVER["REQUEST_URI"],'/Booking') === FALSE && stripos($_SERVER["REQUEST_URI"],'/User') === FALSE ) {
 	$config['csrf_protection'] 	= TRUE;
 }
 // if (stripos($_SERVER["REQUEST_URI"],'/data/topik') === FALSE) {

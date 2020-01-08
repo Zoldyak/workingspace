@@ -5,9 +5,10 @@
       <div class="section-title text-dark">
         <h2 class="font-size-22 text-monospace">Yuk kenalan dengan Coworking Space?</h2>
         <p class="text-justify text-body font-size-18">
-          Coworking Space merupakan Tren kerja bersama yang makin diminati. Coworking space berarti tempat untuk orang-orang berbagi ruang untuk bekerja.Orang-orang ini bisa terdiri dari individu, komunitas, suatu perusahaan yang bergerak di bidang bisnis, khususnya startup (bisnis rintisan).Dengan adanya Coworking space, diharapkan antar individu dapat saling bertukar ide, pikiran, maupun solusi dalam rangka mengembangkan dan memajukan bisnis masing-masing.Coworking Space Banyuwangi beralamat di Tukangkayu, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68416.
-          <?php $datestring = '%Y-%m-%d - %h:%i';
-          echo mdate($datestring); ?>
+        Banyuwangi saat ini telah memiliki Coworkingspace. Coworkingspace memanfaatkan ruang terbuka publik yang direvitalisasi yang menjadi tempat berkumpul anak muda Banyuwangi. Tren bekerja tanpa kantor dan generasi milenial yang dapat bekerja dimana saja telah difisilitasi oleh Pemerintah Kabupaten Banyuwangi. Coworking space merupakan sebuah tempat ekosistem kewirausahaan untuk para milenial saat ini untuk berbagi ruang bekerja dan untuk membangun jejaring. Coworking space dapat membantu para milenial saat ini untuk membangun karier dan keahlian, membuka peluang kolaborasi dan membuka mindset kewirausahaan. Coworking space juga dapat di manfaatkan untuk berbagai pelatihan,kompetisi untuk start up/bisnis dan melatih diri bersama komunitas yang sama.
+          <!-- Coworking Space merupakan Tren kerja bersama yang makin diminati. Coworking space berarti tempat untuk orang-orang berbagi ruang untuk bekerja.Orang-orang ini bisa terdiri dari individu, komunitas, suatu perusahaan yang bergerak di bidang bisnis, khususnya startup (bisnis rintisan).Dengan adanya Coworking space, diharapkan antar individu dapat saling bertukar ide, pikiran, maupun solusi dalam rangka mengembangkan dan memajukan bisnis masing-masing.Coworking Space Banyuwangi beralamat di Tukangkayu, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68416. -->
+          <!-- <?php $datestring = '%Y-%m-%d - %h:%i';
+          echo mdate($datestring); ?> -->
         </p>
       </div>
 
@@ -120,26 +121,27 @@
       <h4 class="">Apa kata mereka tentang Coworking space Banyuwangi ? </h4>
     </div>
     <div class="row">
-      <div class="col-sm-6" style="margin-top:15px;">
-        <div class="card" style="background: #fff0;">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-4">
-                <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg"
-          data-holder-rendered="true">
-          <p class="text-center">Ronnie </p>
-              </div>
-              <div class="col-lg-8">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  <p class="card-text">bermanfaat buat set up meeting out of offices, brings new experiences karena merasakan meeting di lokasi baru yang berbeda, reasonable price dan I love to use karena bisa impress other colleagues with great meeting room.
+      <?php foreach ($datakomen as $rowkomen ): ?>
+        <div class="col-sm-6" style="margin-top:15px;">
+          <div class="card" style="background: #fff0;">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-4">
+                <img class="rounded-circle" alt="100x100" src="<?php echo base_url();?>assets/frontend/img/user/<?php echo $rowkomen['foto'] ?>">
+                  <p class="text-center"><?php echo $rowkomen['nama_lengkap'] ?> </p>
+                </div>
+                <div class="col-lg-8">
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="card-text"><?php echo $rowkomen['komentar'] ?>
 
-                  </p>
-                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    </p>
+                  <i class="fa fa-quote-right" aria-hidden="true"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      <?php endforeach; ?>
       <div class="col-sm-6" style="margin-top:15px;">
         <div class="card" style="background: #fff0;">
           <div class="card-body">

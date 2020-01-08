@@ -29,6 +29,7 @@
           <ul class="list-group list-group-horizontal">
             <li class="list-group-item font-size-22" style="border: unset !important;"><i class="fa fa-map-marker"></i>&nbsp <?php echo $data['alamat'] ?></li>
           </ul>
+          <button data-toggle="modal" data-target="#comment" type="button" class="btn btn-danger btn-lg btn-outline-danger btnku " style=""><i class="fa fa-comments" ></i> Comments </button>
         </div>
         <div class="col-lg-12">
           <br>
@@ -69,6 +70,43 @@
         </table>
         </div>
       </div>
+      <div id="comment" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+           <div class="modal-content">
+
+             <div class="modal-header" style="  background: #ff000a !important; ">
+                   <!-- <button type="button" class="close" data-dismiss="modal" >X</button> -->
+                   <h4 class="modal-title" id="myModalLabel" style="color: #fff !important;"><i class="fa fa-comments" ></i>&nbspForm Comments</h4>
+               </div>
+
+               <div class="modal-body">
+                 <?php echo form_open_multipart('User/CreateComment') ?>
+                 <!-- <form action="p_save.php" name="modal_popup" enctype="multipart/form-data" method="POST"> -->
+                       <div class="form-group" style="padding-bottom: 20px;">
+                         <label for="alamat">Tanggapan tentang Coworking Space</label>
+                          <textarea name="komen"  rows="8" class="form-control" placeholder="Masukkan" required/></textarea>
+                       </div>
+
+                     <div class="modal-footer">
+                         <button class="btn btn-danger btn-outline-danger btnku" type="submit" id="submitform">
+                             Simpan
+                         </button>
+
+                         <button type="reset" class="btn btn-default"  data-dismiss="modal" aria-hidden="true">
+                           Cancel
+                         </button>
+                     </div>
+
+                     </form>
+
+
+
+                   </div>
+
+
+               </div>
+           </div>
+        </div>
     </div>
   </div>
 </section>

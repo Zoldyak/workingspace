@@ -7,13 +7,15 @@ class Home extends CI_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
+    $this->load->model('MF_Home');
   }
 
   function index()
   {
     $load=$this->load;
-    // $listdata= $this->MA_home->list_foto()->result_array();
+    $listkomen= $this->MF_Home->ListKomen()->result_array();
     $data = array('halaman' => 'V_Home.php',
+                  'datakomen'=> $listkomen
                   );
     $load->view('frontend/layout',$data);
   }

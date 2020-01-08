@@ -95,6 +95,26 @@ class User extends CI_Controller{
         $load->view('frontend/layout',$data);
       }
   }
+  public function CreateComment()
+  {
+    $i = $this->input;
+    $load=$this->load;
+    $valid = $this->form_validation;
+    $this->form_validation->set_rules('komen', 'komen', 'required');
+    if($valid->run()) {
+      $postkomen=html_escape($i->post('komen',TRUE));
+      $username=$this->session->userdata('user_id');
+        $datestring = date('Y-m-d h:i:s');
+        $data_form = array(
+        'komentar'=>$postkomen,
+        'email'=>$username,
+        'create_on' =>$datestring,
+        'status'=>1
+      );
+      $this->db->insert('working_komentar', $data_form);
+      redirect('/User/','refresh');
+    }
+  }
   public function Logout()
       {
           $this->session->sess_destroy();

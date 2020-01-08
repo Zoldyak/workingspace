@@ -4,13 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="<?php echo base_url(); ?>dist/index">Stisla</a>
+            <a href="<?php echo base_url(); ?>dist/index">Dashboard CWS</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
             <a href="<?php echo base_url(); ?>dist/index">St</a>
           </div>
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
+
             <li class="dropdown <?php echo $this->uri->segment(2) == '' || $this->uri->segment(2) == 'index' || $this->uri->segment(2) == 'index_0' ? 'active' : ''; ?>">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
               <ul class="dropdown-menu">
@@ -18,6 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li class="<?php echo $this->uri->segment(2) == '' || $this->uri->segment(2) == 'index' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>dist/index">Ecommerce Dashboard</a></li>
               </ul>
             </li>
+            <li class="<?php echo $this->uri->segment(2) == 'User' ? 'active' : ''; ?>"><a class="nav-link" href="<?php echo base_url(); ?>Administrator/User/"><i class="far fa-user"></i> <span>User</span></a></li>
             <li class="menu-header">Starter</li>
             <li class="dropdown <?php echo $this->uri->segment(2) == 'layout_default' || $this->uri->segment(2) == 'layout_transparent' || $this->uri->segment(2) == 'layout_top_navigation' ? 'active' : ''; ?>">
               <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
@@ -114,19 +116,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Auth</span></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo base_url(); ?>dist/auth_forgot_password">Forgot Password</a></li> 
-                <li><a href="<?php echo base_url(); ?>dist/auth_login">Login</a></li> 
-                <li><a href="<?php echo base_url(); ?>dist/auth_register">Register</a></li> 
-                <li><a href="<?php echo base_url(); ?>dist/auth_reset_password">Reset Password</a></li> 
+                <li><a href="<?php echo base_url(); ?>dist/auth_forgot_password">Forgot Password</a></li>
+                <li><a href="<?php echo base_url(); ?>dist/auth_login">Login</a></li>
+                <li><a href="<?php echo base_url(); ?>dist/auth_register">Register</a></li>
+                <li><a href="<?php echo base_url(); ?>dist/auth_reset_password">Reset Password</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Errors</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="<?php echo base_url(); ?>dist/errors_503">503</a></li> 
-                <li><a class="nav-link" href="<?php echo base_url(); ?>dist/errors_403">403</a></li> 
-                <li><a class="nav-link" href="<?php echo base_url(); ?>dist/errors_404">404</a></li> 
-                <li><a class="nav-link" href="<?php echo base_url(); ?>dist/errors_500">500</a></li> 
+                <li><a class="nav-link" href="<?php echo base_url(); ?>dist/errors_503">503</a></li>
+                <li><a class="nav-link" href="<?php echo base_url(); ?>dist/errors_403">403</a></li>
+                <li><a class="nav-link" href="<?php echo base_url(); ?>dist/errors_404">404</a></li>
+                <li><a class="nav-link" href="<?php echo base_url(); ?>dist/errors_500">500</a></li>
               </ul>
             </li>
             <li class="dropdown <?php echo $this->uri->segment(2) == 'features_activities' || $this->uri->segment(2) == 'features_post_create' || $this->uri->segment(2) == 'features_posts' || $this->uri->segment(2) == 'features_profile' || $this->uri->segment(2) == 'features_settings' || $this->uri->segment(2) == 'features_setting_detail' || $this->uri->segment(2) == 'features_tickets' ? 'active' : ''; ?>">

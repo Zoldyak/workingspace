@@ -7,7 +7,7 @@
 
 <header class="header-section">
   <a href="index.html" class="site-logo text-decoration-none">
-  <p class="font-weight-bolder font-size-26 text-white">Coworking Space</p>
+  <p class="font-weight-bolder font-size-26 text-white">Coworking Space Banyuwangi</p>
     <!-- <img src="<?php echo base_url(); ?>/assets/frontend/img/logo.png" alt=""> -->
   </a>
   <nav class="header-nav">
