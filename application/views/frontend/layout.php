@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Mondy | Real Estate HTML Template</title>
+	<title>CoWorking Space Banyuwangi </title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Real estate HTML Template">
 	<meta name="keywords" content="real estate, html">

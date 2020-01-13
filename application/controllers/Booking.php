@@ -51,6 +51,7 @@ class Booking extends CI_Controller{
                   'kategori'  => html_escape($i->post('jenis',TRUE)),
                   'status'  => "Belum di setujui (Proses)",
                   'create_on' =>$datestring,
+                  'terbaca_admin'=>'baru'
               );
               $this->db->insert('working_booking', $data_form);
                 redirect('/Home/','refresh');
