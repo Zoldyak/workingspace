@@ -30,9 +30,7 @@ class MA_Booking extends CI_Model{
   {
     $this->db->where('id_booking', $postid);
     $exe=$this->db->update('working_booking', $data);
-    if ($exe==true) {
-      redirect('/Administrator/Booking','refresh');
-    }
+    
   }
 
 }

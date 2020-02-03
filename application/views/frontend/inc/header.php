@@ -59,7 +59,9 @@
                     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     <strong>  <?php echo validation_errors(); ?></strong>
                   </div>
+                  <div><?php echo $this->session->flashdata('msg');?></div>
     <div class="hero-warp">
+    
       <?php echo form_open_multipart('Booking/') ?>
       <form class="main-search-form">
         <div class="search-type">

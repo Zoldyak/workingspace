@@ -22,21 +22,21 @@ $(document).ready(function() {
     });
 });
 $("#timepicker").datetimepicker({
- format: "LT",
+ format: "HH:mm",
  icons: {
    up: "fa fa-chevron-up",
    down: "fa fa-chevron-down"
  }
 });
 $("#timepicker2").datetimepicker({
- format: "LT",
+ format: "HH:mm",
  icons: {
    up: "fa fa-chevron-up",
    down: "fa fa-chevron-down"
  }
 });
 $("#timepicker3").datetimepicker({
- format: "LT",
+ format: "HH:mm",
  icons: {
    up: "fa fa-chevron-up",
    down: "fa fa-chevron-down"

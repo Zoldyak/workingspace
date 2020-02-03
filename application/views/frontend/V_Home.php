@@ -1,4 +1,5 @@
 <!-- Loan Section end -->
+<?php var_dump($debug) ?>
 <section class="loan-section">
   <div class="loan-warp">
     <div class="container">
@@ -11,7 +12,7 @@
           echo mdate($datestring); ?> -->
         </p>
       </div>
-
+    
     </div>
   </div>
 </section>

@@ -75,9 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'localhost',	
 	'username' => 'root',
 	'password' => '',
+	// 'username' => 'root',
+	// 'password' => 'coworking@2019',
 	'database' => 'banyuwangi_workingspace',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
